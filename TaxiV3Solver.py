@@ -33,6 +33,8 @@ for i in range(2):
     # Break the loop if the episode has terminated or been truncated
     if terminated or truncated:
         break
+# Close the environment to free up resources
+env.close()
 
 # Explanations:
 # Imports: The script imports the gymnasium library for creating the environment and the random library for selecting random actions.
